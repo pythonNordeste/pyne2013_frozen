@@ -1,0 +1,419 @@
+/* Definindo as fontes do site */
+@font-face {
+    font-family: 'Xilosa';
+    src: url('../fonts/xilosa.eot');
+    src: url('../fonts/xilosa.eot') format('embedded-opentype'),
+    url('../fonts/xilosa.woff') format('woff'),
+    url('../fonts/xilosa.ttf') format('truetype'),
+    url('../fonts/xilosa.svg#Xilosa') format('svg');
+}
+
+@font-face {
+    font-family: 'EldesCordel1Medium';
+    src: url('../fonts/eldes_cordel_1_lite.eot');
+    src: url('../fonts/eldes_cordel_1_lite.eot') format('embedded-opentype'),
+    url('../fonts/eldes_cordel_1_lite.woff') format('woff'),
+    url('../fonts/eldes_cordel_1_lite.ttf') format('truetype'),
+    url('../fonts/eldes_cordel_1_lite.svg#EldesCordel1Medium') format('svg');
+}
+
+/* Estilos globais */
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: "Georgia", Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #ffff99; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ffff99 0%, #f7ce00 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffff99), color-stop(100%,#f7ce00)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffff99 0%,#f7ce00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #ffff99 0%,#f7ce00 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #ffff99 0%,#f7ce00 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #ffff99 0%,#f7ce00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff99', endColorstr='#f7ce00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+}
+
+/* Definindo a largura dos elementos */
+header[role=banner], nav#menu, section[role=main], footer[role=contentinfo] {
+    display: block;
+    width: 992px;
+    margin: 0 auto;
+}
+
+section[role=main] {
+    width: 896px;
+    padding: 0 48px;
+    position: relative;
+    top: -50px;
+}
+
+/* Header */
+header[role=banner] {
+    height: 187px;
+    margin-top: 30px;
+}
+header[role=banner] hgroup h1 {
+    float: left;
+    width: 476px;
+    height: 187px;
+    background-image: url("../img/logo.png");
+    margin: 0;
+}
+header[role=banner] hgroup h2 {
+    float: right;
+    font-family: "EldesCordel1Medium", Arial, sans-serif;
+    margin-top: 45px;
+    font-size: 30px;
+    margin-right: 50px;
+    text-align: right;
+}
+header[role=banner] hgroup h2 span#cidade-uf {
+    display: block;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Menu */
+nav#menu {
+    background: url("../img/menu.png") no-repeat top center;
+    text-align: center;
+    height: 66px;
+    padding-top: 20px;
+    position: relative;
+    top: -20px;
+    clear: both;
+}
+nav#menu a {
+    font-family: "Xilosa", Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+/* Articles */
+article[role=article] h3 {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 80px;
+    margin: 0;
+    padding-top: 15px;
+}
+article[role=article] div.article-content {
+    padding: 1px 20px;
+    border: solid 12px #000;
+    background: #ffffff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #e8e6da 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e8e6da)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#e8e6da 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#e8e6da 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#e8e6da 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #ffffff 0%,#e8e6da 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e6da',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+article[role=article] h3 a.go-top:first-letter {
+    font-size: 20px;
+}
+article[role=article] h3 a.go-top {
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+    color: #b79900;
+    margin-top: 30px;
+}
+
+/* Programação da PyNE 2013 */
+section.dias {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+section.dias article.dia {
+    -webkit-flex: 1;
+    -ms-flexbox: 1;
+    flex: 1;
+    padding: 0;
+}
+section.dias article.dia h4 {
+    background: #000;
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 25px;
+    color: #fff;
+    padding: 5px 15px;
+
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+    font-weight: bold;
+}
+section.dias article.dia dl {
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+}
+section.dias article.dia:first-child dl {
+    border-right: dotted 1px #b79900;
+}
+section.dias article.dia dl dt {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 20px;
+}
+section.dias article.dia dl dd {
+    font-size: 0.8em;
+    margin: 0 13px 40px 13px;
+}
+section.dias article.dia dl dt {
+    padding: 5px 13px;
+}
+section.dias article.dia dl dt time {
+    float: right;
+    color: #b79900;
+}
+
+/* Messages */
+article#messages div {
+    margin-top: 25px;
+}
+
+/* Contato */
+article#contato > div {
+    padding: 10px;
+}
+article#contato div form label {
+    display: block;
+    padding-bottom: 10px;
+}
+article#contato div form label span.rotulo {
+    display: none;
+}
+article#contato div form label input[type=text],
+article#contato div form label input[type=email],
+article#contato div form label textarea,
+article#contato div form div input[type=submit] {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 16px;
+    border: solid 4px #000;
+    padding: 3px;
+    width: 400px;
+}
+article#contato div form div input[type=submit] {
+    font-size: 22px;
+    background: #000;
+    color: #fff;
+    width: 413px;
+}
+
+/* Footer */
+footer {
+    background: url("../img/footer.png") no-repeat top center;
+    height: 216px;
+}
+footer address {
+    font-family: "EldesCordel1Medium", Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 180px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Rotacionar */
+.rotacionar-direita {
+    transform:rotate(2deg);
+    -ms-transform:rotate(2deg); /* IE 9 */
+    -moz-transform:rotate(2deg); /* Firefox */
+    -webkit-transform:rotate(2deg); /* Safari and Chrome */
+    -o-transform:rotate(2deg); /* Opera */
+}
+.rotacionar-esquerda {
+    transform:rotate(-2deg);
+    -ms-transform:rotate(-2deg); /* IE 9 */
+    -moz-transform:rotate(-2deg); /* Firefox */
+    -webkit-transform:rotate(-2deg); /* Safari and Chrome */
+    -o-transform:rotate(-2deg); /* Opera */
+}
+.img-polaroid {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.ribbon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 175px;
+    height: 175px;
+}
+.ribbon {
+    background-color: #a00;
+    overflow: hidden;
+    /* top left corner */
+    position: absolute;
+    right: -3em;
+    top: 2.5em;
+    /* 45 deg ccw rotation */
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    /* shadow */
+    -moz-box-shadow: 0 0 1em #888;
+    -webkit-box-shadow: 0 0 1em #888;
+}
+.ribbon a {
+    border: 1px solid #faa;
+    color: #fff;
+    display: block;
+    font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+    margin: 0.05em 0 0.075em 0;
+    padding: 0.5em 3.5em;
+    text-align: center;
+    text-decoration: none;
+    /* shadow */
+    text-shadow: 0 0 0.5em #444;
+}
+
+/* Palestrantes */
+.article-content .left, .article-content .right {
+    position: relative;
+    float: left;
+    display: block;
+    width: 45%;
+    margin: 20px 0;
+    padding: 0 2%;
+}
+
+.article-content .left {
+    border-right: dotted 1px #b79900;
+}
+
+.article-content .speaker {
+    margin-bottom: 30px;
+}
+
+.article-content .speaker img {
+    float: left;
+    margin: 0px 10px 5px 0px;
+}
+
+.article-content .speaker h3 {
+    font-size: 1.2em;
+    padding-top: 0;
+    margin-bottom: 5px;
+}
+
+.article-content .speaker p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+section.dias article.dia,
+section.tipos article.tipo {
+    padding: 0;
+    clear: both;
+}
+section.dias article.dia h4,
+section.tipos article.tipo h4 {
+    background: #000;
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 25px;
+    color: #fff;
+    padding: 5px 15px;
+
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+    font-weight: bold;
+}
+section.dias article.dia dl, 
+section.tipos article.tipo dl {
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+}
+section.tipos article.tipo:last-child dl {
+    border-right: none;
+}
+section.dias article.dia dl dt, 
+section.tipos article.tipo dl dt {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 17px;
+}
+section.dias article.dia dl dd, 
+section.tipos article.tipo dl dd {
+    float: left;
+    font-size: 0.8em;
+    margin: 0 13px 40px 43px;
+}
+section.dias article.dia dl dt, 
+section.tipos article.tipo dl dt {
+    padding: 5px 13px;
+}
+section.dias article.dia dl dt time {
+    float: right;
+    color: #b79900;
+}
+
+/*  Talks */
+
+.article-content .talk {
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.article-content .talk img {
+    float: left;
+    margin: 0px 10px 5px 0px;
+}
+
+.article-content .talk h3 {
+    font-size: 1.2em;
+    padding-top: 0;
+    margin-bottom: 5px;
+}
+
+.article-content .talk p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.addthis_toolbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* pure forms */
+form.pure-form {
+    margin: 2em 0;
+}
+.errorlist {
+    color: #e9322d;
+    margin: 0 0 0 10.4em;
+    list-style: none;
+    padding: 0;
+}
+table.pure-table {
+    width: 100%;
+    margin: 2em 0;
+}
